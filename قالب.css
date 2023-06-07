@@ -46,7 +46,7 @@ ul {
 .menubar :hover{
     background-color: rgb(235, 31, 190);
     color:  black;
-    text-shadow: 1px 1px 1px 1px cornsilk;
+    text-shadow:  1px 1px cornsilk;
     border: 30px;
     border-radius: 3px;
 }
@@ -63,7 +63,9 @@ a{
     display: flex;
     justify-content: flex-end;
      margin-top: 8%;
-     box-sizing:border-box;
+     display: flex;
+     align-items:  baseline;
+     
 }
 
 .content{
@@ -72,7 +74,8 @@ a{
     text-shadow: 1px 1px rgb(201, 229, 157);
     border-radius: 3px;
     flex-grow: 10;
-    
+    flex-basis: 80%;
+    text-align: center;
    
  
     
@@ -82,8 +85,10 @@ a{
     font-size: 30px;
     text-shadow: 1px 1px rgb(201, 229, 157);
     border-radius: 3px;
-    padding: 20px;
+    margin: 7px;
     flex-grow: 1;
+    flex-basis: 20%;
+    text-align: center;
 
   
  
@@ -132,4 +137,3 @@ img{
     
     box-shadow: 1px 0.5px  crimson;
 }
-@media (max.width:100px)
