@@ -22,10 +22,8 @@ body{
     width: 100%;
     align-items: center;
     margin-top: 550px;
-   
- 
-   
-}
+    
+   }
     
    
 .menubar{
@@ -59,12 +57,9 @@ a{
 
 .body1{
   
-    display: flex;
-    justify-content: flex-end;
      margin-top:1%;
-     display: flex;
-   
-     
+    
+    
 }
 
 .content{
@@ -72,13 +67,12 @@ a{
     font-size: 30px;
     text-shadow: 1px 1px rgb(201, 229, 157);
     border-radius: 3px;
-    width: 75%;
+    float: left;
     text-align: center;
     padding: 15px;
-   
- 
-    
-}
+    width: 75%;
+    margin-bottom: 15px;
+     }
 .sidebar{
     background-color: rgba(247, 125, 236, 0.89);
     color: rgb(66, 45, 49);
@@ -86,10 +80,11 @@ a{
     text-shadow: 1px 1px rgb(121, 117, 117);
     border-radius: 3px;
     margin-left: 7px;
-    width: 25%;
+    width: 23%;
     text-align: center;
     padding: 2px;
-
+    float: left;
+    margin-bottom: 15px;
   
  
 }
@@ -103,6 +98,8 @@ a{
     border-style:solid;
     border-color: rgba(160, 241, 38, 0.288);
     margin-top: 550px;
+    clear: both;
+    
 
 }
 
@@ -117,25 +114,14 @@ a{
    justify-content: start;
    margin-top: 30px;
    margin-left: 15px;
-   
-   
-   
+ 
 }
 
-
-.logo{
-    width:100px;
-    height: 50px;
-    padding-left: 10px;
-    
-}
 .continer{
     display: flex;
     justify-content: space-around;
-    transition: all ease 3s;
-   
-
-    
+    transition: all ease 1s;
+  
 }
 .continer :hover{
     opacity: 1;
@@ -218,14 +204,42 @@ a{
     justify-content: center;
  
    }
-   @media only screen and (max-width: 803px) {
+   @media only screen and (max-width: 850px) {
    .header{
-    width: 200px;
-    height: 600px;
+    width: 100%;
+    height: 10%;
+    margin-top: 0px;
    }
-   .footer{ width: 200px;
-    height: 600px;}
+   .footer{ 
+     width: 100%;
+     margin-top: 5px;}
  
-   .sidebar{}
-   .content{}
-  }
+  
+      .continer{
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      } 
+      .content{
+        width: 100%;
+       
+      }
+      .sidebar{
+        width: 100%;
+        margin-top: 5px;
+        margin-left: -2px;
+      
+      }
+       
+      p{
+        padding: 10px;
+      } 
+      .menubar{
+        font-size: 50px;
+        padding: -10px;
+      }
+   }
+ 
+  
